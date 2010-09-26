@@ -1,0 +1,6 @@
+category: Net Gnome
+requires: libglib2.0_0 libgtk2.0_0 libintl8 libpurple0 pidgin
+sdesc: "Pidgin Twitter/Identi.ca protocol plugins"
+ldesc: "This project implement a plug-in for any LibPurple base client 
+like Pidgin or Finch. Currently it support Twitter, Identica, and 
+Status.net server through the conversation windows."

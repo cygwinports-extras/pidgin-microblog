@@ -1,0 +1,14 @@
+ORIG_PN="mbpurple"
+
+DESCRIPTION="Pidgin Twitter/Identi.ca protocol plugins"
+HOMEPAGE="http://code.google.com/p/microblog-purple/"
+SRC_URI="http://microblog-purple.googlecode.com/files/${ORIG_PN}-${PV}.tar.gz"
+
+MAKEOPTS+=" -j1 IS_WIN32=0 PLUGIN_SUFFIX=.dll EXE_SUFFIX=.exe"
+
+src_compile() {
+	lndirs
+	cd ${B}
+	cygmake
+}
+
